@@ -1,0 +1,25 @@
+{% extends "ProyectowebApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="contenedorFormulario">
+
+    {% if "valido" in request.GET %}
+        <p style="color: black;">Información enviada de forma casui-correcta </p>
+    {% endif %}
+
+    <form action="" method="POST" style="text-align: center; font-family: 'Ubuntu', sans-serif;">
+        {% csrf_token %}
+        <table style="color: black; margin: 16px auto;">{{miFormulario.as_table}}</table>
+
+        <input class="buttonForm" type="submit" value="Enviar" style="width: 140px; height: 40px; border-radius: 18px; font-family: 'Ubuntu', sans-serif;">
+    </form>
+</div>
+<!-- <p style="color: snow;">{{request.POST}}</p> -->
+{% endblock %}
+
+
+
+
