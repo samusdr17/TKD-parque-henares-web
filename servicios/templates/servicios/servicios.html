@@ -1,0 +1,46 @@
+{% extends "ProyectowebApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+  <div class="container board" style="align-items: center;">
+    <div class="row" style="justify-content: center;">
+    {% for servicio in servicios %}
+
+        <!-- <div class="container">
+          <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{servicio.imagen.url}}" alt="" style="width: 50%;">
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-lower">{{servicio.titulo}}</span>
+                <span class="section-heading-upper">{{servicio.contenido}}</span>
+              </h2>
+             
+            </div>
+          </div>
+        </div> -->
+        <div class="col-md-4">
+          <div class="card" style="width: 100%; margin: 8px;">
+            <img class="card-img-top" style="height: 280px;" src="{{servicio.imagen.url}}" alt="">
+            <div class="card-body" style="text-align: center;">
+              <h2 class="">
+                {{servicio.titulo}}
+                <!-- {% for title in servicio.titulo %}
+                {% if title == " " %}
+                </br>
+                {% endif %}
+                {{title}}
+                {% endfor %} -->
+              </h2>
+              <h6 style="color:rgba(6,147,227,1);">{{servicio.horarios}}</h6>
+              <p>{{servicio.contenido}}</p>
+            </div>
+          </div>
+        </div>
+
+
+    {% endfor %}
+  </div>
+  </div>
+
+{% endblock %}
