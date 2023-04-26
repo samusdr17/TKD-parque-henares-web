@@ -1,0 +1,148 @@
+{% extends "ProyectowebApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+   <!-- Heading -->
+   <section class="page-section clearfix">
+    <span class="flexCT">
+      <div class="normalFlex">
+        <img class="redimIcon" src="{% static 'ProyectowebApp/img/information-icon-5.png' %}">
+        <h4 style="margin-left: 8px;">COVID-19:</h4> 
+        <!-- <span style="margin-left: 12px; margin-top: 4px"> -->
+          <h5 style="color: #fff; margin-left: 12px;">Seguimos con nuestra actividad. Si quieres saber mas sobre nuestras medidas de prevención pulsa el botón.
+          </h5>
+        <!-- </span> -->
+      </div>
+      <div class="button normalFlex">
+        <a  href="#"><h4 style="color: #fff;">Leer Más</h4></a>
+      </div>
+    </span>
+    <!-- <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'ProyectowebApp/img/maestros.jpg' %}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-upper">Taekwondo, deporte olimpico<img style="margin-left: 8px;" src="{% static 'ProyectowebApp/img/olympic.png' %}"></span>
+            <span class="section-heading-lower">Todo gran deporte comienza con un gran paso</span>
+          </h2>
+          <p class="mb-3">Ven a disfrutar de la práctica del taekwondo en un gimnasio de entorno familiar abierto a toda persona con ganas de formar parte de ella</p>
+         
+        </div>
+      </div>
+    </div> -->
+    <div class="divHome">
+      <!-- <div class="item-flex"></div> -->
+      <div class="item-flex columnFlex " style="height: 50%; padding-left: 180px; padding-right: 180px; text-align: center;">
+        <h2 class="section-heading mb-4" >
+          <span class="section-heading-upper" style="margin-bottom: 40px;">Taekwondo, deporte olimpico<img style="margin-left: 8px;" src="{% static 'ProyectowebApp/img/olympic.png' %}"></span>
+          <span class="section-heading-lower">Todo gran deporte comienza con un gran paso</span>
+        </h2>
+        <p class="mb-3">Ven a disfrutar de la práctica del taekwondo en un gimnasio de entorno familiar abierto a toda persona con ganas de formar parte de ella</p>
+      </div>
+      <div class="item-flex"></div>
+    </div>
+  </section>
+
+    <div class="contact">
+      <div style="width: 33%; text-align: center; border-right: #fff solid 1px;"><h3 style="color: #fff; ">LLAMANOS</h3><h1 style="color: #fff;">916740465</h1></div>
+      <div style="width: 33%; text-align: center; border-right: #fff solid 1px"><h3 style="color: #fff; ">SAN FERNANDO DE HENARES</h3><h1 style="color: #fff;">CALLE DE MOTRICO, 13</h1></div>
+      <div style="width: 33%; text-align: center;"><h3 style="color: #fff; ">HORARIO DE ATENCIÓN</h3><h1 style="color: #fff;">LU - VI: 8:00 - 21:00</h1></div>
+    </div>
+  
+    <!-- Message -->
+    <section class="page-section cta normalFlex" style="flex-direction: column;">
+
+
+      <div class="slide">
+        <div class="slide-inner" style="display: flex; aligne-item:center; justify-content:center; height:auto;">
+            <input class="slide-open" type="radio" id="slide-1" 
+                  name="slide" aria-hidden="true" hidden="" checked="checked">
+            <div class="slide-item normalFlex">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-9 mx-auto">
+                    <div class="cta-inner text-center rounded">
+                      <h2 class="section-heading mb-4">
+                        <!-- <span class="section-heading-upper">Compromiso total</span> -->
+                        <span class="section-heading-lower">Entrenando cuerpo y mente desde 1986</span>
+                      </h2>
+                      <span class="section-heading-upper">Taekwondo es el arte marcial coreano que entrena cuerpo y mente. Desde el club deportivo Parque Henares Queremos que el taekwondo sea tu deporte de referencia. Enseñamos valores de respeto y disciplina a partir de los 4 años de edad.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <img src="{% static 'ProyectowebApp/img/dolio.jpg' %}">
+            </div>
+            <input class="slide-open" type="radio" id="slide-2" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item normalFlex">
+              <div class="normalFlex" style="flex-direction: column;">
+                <img style="border-radius: 32px;" src="{% static 'ProyectowebApp/img/mapa.png' %}">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                      <div class="cta-inner text-center rounded">
+                        <h2 class="section-heading mb-4">
+                          <!-- <span class="section-heading-upper">Compromiso total</span> -->
+                          <span class="section-heading-lower">ESTAMOS EN SAN FERNANDO DE HENARES</span>
+                        </h2>
+                        <span class="section-heading-upper">Taekwondo es el arte marcial coreano que entrena cuerpo y mente. Desde el club deportivo Parque Henares Queremos que el taekwondo sea tu deporte de referencia. Enseñamos valores de respeto y disciplina a partir de los 4 años de edad.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <img src="{% static 'ProyectowebApp/img/hansonal.jpg' %}">
+            </div>
+            <input class="slide-open" type="radio" id="slide-3" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item normalFlex" style="flex-direction: column;">
+              <div class="normalFlex">
+              <img class="imgText" src="{% static 'ProyectowebApp/img/texto_maestro_cut.jpg' %}">
+              <img class="imgMaest" src="{% static 'ProyectowebApp/img/master_b&w.jpg' %}">
+              </div>
+              <h4 style="font-family: 'Pacifico', cursive; color: blue;">ANGEL VERA MARISCAL</h4>
+              <h4 style="font-family: 'Pacifico', cursive;">GRADO: CINTURÓN NEGRO 6º DAN</h4>
+              <img style="width: 280px; height: 160px; margin: 0px;" src="{% static 'ProyectowebApp/img/angel_signature.png' %}">
+            </div>
+            <label for="slide-3" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-3">›</label>
+            <ol class="slide-indicador">
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <a class="aNone" href="#">
+    <div class="buttonFree normalFlex">
+      <h4 class="">Prueba gratis</h4>
+    </div>
+    </a>
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-lower">Entrenando cuerpo y mente desde 1986</span>
+              </h2>
+              <span class="section-heading-upper">Taekwondo es el arte marcial coreano que entrena cuerpo y mente. Desde el club deportivo Parque Henares Queremos que el taekwondo sea tu deporte de referencia. Enseñamos valores de respeto y disciplina a partir de los 4 años de edad.</span>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+{% endblock %}
